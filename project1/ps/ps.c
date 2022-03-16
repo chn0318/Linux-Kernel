@@ -32,8 +32,15 @@ int isStringNum(char *str)
 
 char getstatus(char* str){
     int i=0;
+    int flag=0;
     while(i<strlen(str)){
-        if(isupper(str[i])){
+        if(str[i]=='('){
+            flag++;
+        }
+        if(str[i]==')'){
+            flag--;
+        }
+        if(isupper(str[i])&&flag==0){
             return str[i]; 
         }
         i++;
