@@ -131,6 +131,7 @@ static int __init proc_init(void)
 static void __exit proc_exit(void)
 {
     proc_remove(proc_ent);
+    proc_remove(proc_dir);
     pr_info("/proc/<519021910480>/calc removed\n");
 }
 
