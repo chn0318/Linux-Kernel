@@ -1,1 +1,0 @@
-cmd_/home/chn/CS353/project1/calc/calc.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/chn/CS353/project1/calc/calc.ko /home/chn/CS353/project1/calc/calc.o /home/chn/CS353/project1/calc/calc.mod.o;  true
